@@ -20,7 +20,6 @@ export const getAddressInfo = async (
     const ipfsPath = await getIPFSPath(checksumAddress);
     return await getInfoFromIPFS(ipfsPath, ipfsGateway);
   } catch (error) {
-    console.error("Error in getAddressInfo: ", error);
     return undefined;
   }
 };
